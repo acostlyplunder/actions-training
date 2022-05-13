@@ -10,7 +10,7 @@ FROM myoung34/github-runner:latest
 #########################################
 # Variables #
 #########################################
-ARG orgname="todd org"
+ARG orgname="githubschool"
 ARG reponame="pub-sec-t3-acostlyplunder"
 
 #########################################
