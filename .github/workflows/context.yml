@@ -13,7 +13,7 @@ jobs:
   Context-Info:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    name: Context info
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Dump GitHub context
@@ -40,14 +40,3 @@ jobs:
       env:
         MATRIX_CONTEXT: ${{ toJson(matrix) }}
       run: echo "$MATRIX_CONTEXT"
-      - name: Dump secrets context
-      env:
-        SECRETS_CONTEXT: ${{ toJson(secrets) }}
-      run: | 
-        echo "$SECRETS_CONTEXT"
-        ls
-        pwd
-        env
-      
-      
-      
